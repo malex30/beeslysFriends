@@ -14,6 +14,29 @@
     width: 400px;
 }
 
+#gallery ul{
+    width: 250px;
+    float: left;
+    list-style-type: none;
+}
+
+#gallery ul li{
+    display: inline;
+    float: left;
+    padding: 8px;
+}
+
+#gallery ul li a img{
+    width: 150px;
+    height:150px;
+    border: none;
+} 
+
+#gallery{
+    width:1000px;
+
+}
+
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {   
@@ -141,7 +164,23 @@ header a.active {
       float: none;
 
 }
+
 }
+
+figure{
+    padding: 30px;
+    text-align: center;
+}
+
+figure img{
+    width: 700px;
+}
+
+figcaption{
+    font: bold;
+    font-size: 1.5em;
+}
+
 .nav-right, .nav-left{
     display: inline-block;
 }
