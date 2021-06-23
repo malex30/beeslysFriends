@@ -2,7 +2,16 @@
     box-sizing: border-box;
     margin: auto;
     padding: 5px;
+    overflow: auto;
 }
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#7e6b58;
+    overflow: auto;
+    
+}
+
 #content::after {
     display:block;
     content:"";
@@ -10,20 +19,26 @@
 
 }
 
+#gallery{
+    margin: 0px;
+    width: 1200px;
+}
+
 #event{
     width: 400px;
 }
 
 #gallery ul{
-    width: 250px;
     float: left;
-    list-style-type: none;
+    display: inline;
+    width: 50%;
 }
 
 #gallery ul li{
-    display: inline;
     float: left;
-    padding: 8px;
+    list-style-type: none;
+    width:50%;
+
 }
 
 #gallery ul li a img{
@@ -32,10 +47,6 @@
     border: none;
 } 
 
-#gallery{
-    width:1000px;
-
-}
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
@@ -106,12 +117,7 @@
 a{
     text-decoration: none;
     color: #f1f1f1;
-}
-
-body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:#7e6b58;
+    height: 100%;
 }
 
 footer{
@@ -168,19 +174,53 @@ header a.active {
 }
 
 figure{
-    padding: 30px;
+    padding: 10px;
     text-align: center;
+    width: 550px;
+    margin: 0;
+    float: right;
+    display: inline;
 }
 
 figure img{
-    width: 700px;
+    width: 500px;
 }
 
 figcaption{
     font: bold;
     font-size: 1.5em;
+    text-align: center;
 }
 
 .nav-right, .nav-left{
     display: inline-block;
+}
+
+form{
+    margin: 0 auto;
+    padding: auto;
+    width: 350px;
+
+}
+
+.adoption{
+    background-color: aliceblue;
+}
+
+.adoption h2 {
+    text-align: center;
+    font-size: 100px;
+}
+
+.adoption img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.adoption p{
+    border-style: groove;
+    text-align: center;
+    width: 750px;
 }
